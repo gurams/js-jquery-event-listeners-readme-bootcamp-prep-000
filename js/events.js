@@ -13,3 +13,8 @@ function getIt(){
     return
   })
 }
+function frameIt(){
+  $('img').on("load" , function(){
+    $('img').append('<class="tasty"');
+  })
+}
