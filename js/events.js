@@ -14,8 +14,14 @@ function getIt(){
   })
 }
 function frameIt(){
-  $('img').on("load" , function(){
+  $('document').on("load" , function(){
     $('img').append('<class="tasty" />');
     return
+  })
+}
+function pressIt(){
+  $('#typing').on("keydown" , function(key){
+  if (key.which === 72)
+     alert("G pressed")
   })
 }
